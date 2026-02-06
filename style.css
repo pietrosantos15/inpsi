@@ -120,25 +120,40 @@ body {
 }
 
 
-.section-grid {
+.grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  padding: 80px 0;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  padding: 50px 0;
 }
 
+/* Estilo do Card de Verdade */
 .card {
-  background: #a3078e;
-  color: #fff;
+  background-color: #ffffff; 
+  border-radius: 12px;
   padding: 30px;
-  height: 100px;
-  width: 100px;
-  border-radius: 10px;
-  transition: var(--transition);
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+  border: 1px solid #eee; 
+  transition: transform var(--transition), box-shadow var(--transition);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 200px; 
 }
 
+
+.card h2 {
+  color: var(--cor-branca); 
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* Efeito ao passar o mouse */
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px); /* Sobe um pouco mais */
+  box-shadow: 0 8px 25px rgba(126, 15, 126, 0.2); /* Sombra roxa sutil */
 }
 
 /* --- FORMULÁRIO --- */
