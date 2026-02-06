@@ -4,127 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>INPSI - Psicanálise</title>
 </head>
 <body>
-    
-        <header class="header">
-            <h1 class="nome"><img src="inpsi.png" alt="Logo INPSI"></h1>
+    <header class="header">
+        <div class="container header-content">
+            <img src="LOGOINPSI.png" alt="Logo INPSI" class="logo">
             <nav class="nav">
-                <a href="/" class="item">Home</a>
-                <a href="/" class="item">Sobre</a>
-                <a href="/" class="item">Cursos e Eventos</a>
-                <a href="/" class="item">Transmissão de psicánalise</a>
-                <a href="/" class="item">Artigos e notícias</a>
-                <a href="/" class="item">Contato</a>
+                <a href="#">Home</a>
+                <a href="#">Sobre</a>
+                <a href="#">Cursos e Eventos</a>
+                <a href="#">Transmissão da Psicanálise</a>
+                <a href="#">Artigos e Notícias</a>
+                <a href="#">Contato</a>
             </nav>
-        </header>
+        </div>
+    </header>
+
     <main>
-        <section class="section1">
-            <video autoplay muted loop playsinline>
-                <source src="Vídeo 1.webm" type="video/webm">
-            </video>
-            <div class="texto">
-                <h1>INPSI - PSICÁNALISE</h1>
-                <p>O drone inteligente de alta performance</p>
-                <button class="botao">Quero uma demonstração</button>
-            </div>
-        </section>
-        <section class="section2">
-            <div class="texto2">
-                <h2>Monitore e aplique defensivos agrícolas com
-                precisão, economia e segurança ambiental</h2>
-                <p style="font-weight: 400; font-size: 20px;">🚁 Rápido  📡 Inteligente  🌱 Sustentável</p>
-                <p style="font-weight: 300; margin-bottom: 18px; font-size: 15px;">👉 Agende agora uma demonstração gratuita na sua fazenda!</p>
-                <div class="botoes">
-                    <button class="botao1section2">Assistir Video ▶</button>
-                    <button class="botao2section2">Reportagem </button>
+        <section class="carousel-container">
+            <div class="carousel-track">
+                <div class="slide active">
+                <img src="INPSI.png" alt="Slide 1">
+                </div>
+                <div class="slide">
+                <img src="images.jpg" alt="Slide 2">
                 </div>
             </div>
-        </section>
-        <section class="section3"><img src="Imagem 2.png"></section>
-        <section class="section4">
-            <div class="divs4">
-                <h2>Monitoramento aéreo em tempo real</h2>
-                <p>das áreas de cultivo, identificando pragas,<br>falhas de plantio e estresse hídrico.</p>
-            </div>
-            <div class="divs4">
-                <h2>Aplicação localizada de defensivos</h2>
-                <p>com mapeamento por GPS e sensores de precisão.</p>
-            </div>
-            <div class="divs4">
-                <h2>Redução de custos com insumos</h2>
-                <p>e mão de obra.</p>
-            </div>
-            <div class="divs4">
-                <h2>Cobertura de grandes áreas em poucos minutos</h2>
-                <p>mesmo em terrenos acidentados.</p>
-            </div>
-            <div class="divs4">
-                <h2>Relatórios automatizados</h2>
-                <p>para análise técnica e tomada de decisão rápida.</p>
-            </div>
-            <div class="divs4">
-                <h2>E muito mais...</h2>
-            </div>
+
+            <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
         </section>
 
-
-         <section id="depoimentos" class="depoimentos">
-            <div class="container">
-                <h2>Quem já testou, recomenda</h2>
-                <div class="depoimentos-content">
-                    <div class="depoimentos-autor-image">
-                        <img src="Imagem 4.jpg" alt="Carlos Nonato">
-                    </div>
-                    <div class="depoimentos-text">
-                        <p class="mensagem">“Nunca imaginei que a tecnologia de drones pudesse trazer tantos benefícios
-                            para a minha lavoura. A AGROVANT superou todas as minhas expectativas, com um serviço de
-                            qualidade e resultados impressionantes. 100% satisfeito!”</p>
-                        <p class="autor"><strong>Carlos Nonato</strong>, Engenheiro Florestal, CEO</p>
-                        <div class="depoimentos-status">
-                            <span class="rating">★★★★★</span>
-                            <span>Mais de 250 fazendas atendidas em todo o brasil</span>
-                        </div>
-                    </div>
+        <section class="features container">
+            <div class="grid">
+                <div class="card">
+                    <h2>Cursos presenciais e 100% online para profissionais</h2>
                 </div>
+                <div class="card">
+                    <h2>Análise pessoal e suporte da equipe docente</h2>
+                <div class="card">
+                    <h2>Atendimento de pacientes com supervisão individual</h2>
+                </div>
+                <div class="card">
+                    <h2>Programação alinhada com demandas clínicas</h2>
+                </div>
+                <div class="card">
+                    <h2>Cursos certificados e reconhecidos internacionalmente</h2>
+                </div>
+                <div class="card">
+                    <h2>Relatórios</h2>
+                </div>
+
             </div>
         </section>
 
-
-        <section class="section6">
-    <div class="texto6">
-        <h2>🎯 Pronto para ver de perto?</h2>
-        <h3>Nossa equipe técnica vai até você!</h3>
-        <p>
-            Faça um teste gratuito com nosso drone em operação real no seu plantio florestal. 
-            Sem compromisso, 100% prático.
-        </p>
-
-        <p class="info">
-            📞 Suporte: (11) 99999-0000<br>
-            📍 Atendemos todo o sudeste e centro-oeste.
-        </p>
-    </div>
-
-    <div class="formulario">
-        <form>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
-
-            <label for="celular">Celular:</label>
-            <input type="tel" id="celular" name="celular" placeholder="Digite seu celular" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Digite seu email" required>
-
-            <button type="submit" class="botao-form">AGENDAR UMA DEMONSTRAÇÃO</button>
-        </form>
-    </div>
-</section>
-
+        <section class="contact container">
+            <div class="form-container">
+                <h2>🎯 Agendar Demonstração</h2>
+                <form>
+                    <input type="text" placeholder="Nome" required>
+                    <input type="tel" placeholder="Celular" required>
+                    <input type="email" placeholder="Email" required>
+                    <button type="submit" class="btn btn-form">ENVIAR</button>
+                </form>
+            </div>
+        </section>
     </main>
 </body>
+<script src="script.js" defer></script>
 </html>
-
-
